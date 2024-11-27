@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Media de Notas</title>
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="ej3/styles/styles.css" rel="stylesheet" />
 </head>
 <body>
 <div class="container">

@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Saludo en varios idiomas</title>
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="ej2/styles/styles.css" rel="stylesheet" />
 </head>
 <body>
 <div class="container">

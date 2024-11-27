@@ -9,13 +9,13 @@
 <html>
 <head>
     <title>Ejercicio 1</title>
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="ej1/styles/styles.css" rel="stylesheet" />
 </head>
 <body>
 <div class="container">
     <h1>Datos Personales</h1>
     <span class="cork">Información Personal</span>
-    <p><strong>Nombre:</strong> Juan Pérez</p>
+    <p><strong>Nombre:</strong> Juan</p>
     <p><strong>Apellidos:</strong> Pérez González</p>
     <p><strong>Curso:</strong> Ingeniería Informática</p>
     <p><strong>Edad:</strong> 25 años</p>
