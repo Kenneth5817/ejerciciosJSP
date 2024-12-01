@@ -9,18 +9,15 @@
 <html>
 <head>
     <title>Ejercicio 1</title>
-    <link href="ej1/styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+
 </head>
 <body>
-<div class="container">
-    <h1>Datos Personales</h1>
-    <span class="cork">Información Personal</span>
-    <p><strong>Nombre:</strong> Juan</p>
-    <p><strong>Apellidos:</strong> Pérez González</p>
-    <p><strong>Curso:</strong> Ingeniería Informática</p>
-    <p><strong>Edad:</strong> 25 años</p>
-    <button>Enviar</button>
-</div>
+<span class="cork">Datos Personales: </span>
+<p>Nombre: </p>
+<p>Apellidos: </p>
+<p>Curso: </p>
+<p>Edad: </p>
+<p></p>
 </body>
 </html>
-
