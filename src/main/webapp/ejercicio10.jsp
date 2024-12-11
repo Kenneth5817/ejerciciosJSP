@@ -36,7 +36,7 @@
     </form>
 
     <%
-        // Recuperar los porcentajes ingresados por el usuario
+        // Recuperamos los porcentajes ingresados por el usuario
         int chocolate = 0;
         int fresa = 0;
         int vainilla = 0;
