@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: admin
-  Date: 01/12/2024
-  Time: 22:25
+  Date: 08/12/2024
+  Time: 17:25
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="contenedor">
-    <h1>Generar Tabla de Multiplicar</h1>
+    <h1>Tablas de Multiplicar</h1>
     <form action="ejercicio6.jsp" method="post">
         <label for="numero">Ingresa un número:</label>
         <input type="number" id="numero" name="numero" required>

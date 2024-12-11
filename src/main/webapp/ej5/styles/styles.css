@@ -1,54 +1,32 @@
 body {
-    background-color: #fff9e6; /* Amarillo pastel */
+    background-color: #c7f1bc;
     font-family: Arial, sans-serif;
-    color: #4f86f7; /* Azul pastel */
+    color: #4f86f7;
     text-align: center;
 }
 
 .contenedor {
     width: 50%;
     margin: 50px auto;
-    padding: 20px;
-    background-color: #f0f8ff; /* Azul claro pastel */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f8ff;
 }
 
 h1 {
-    color: #4f86f7; /* Azul pastel */
-}
-
-label, p {
-    font-size: 1.2em;
-    color: #666;
+    color: #4f86f7;
 }
 
 input {
-    padding: 10px;
     margin: 5px;
     width: 60%;
-    font-size: 1em;
-    border-radius: 5px;
-    border: 1px solid #d1d1d1;
-    background-color: #fafafa; /* Gris claro pastel */
+    background-color: #fafafa;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #4f86f7; /* Azul pastel */
+    background-color: #4f86f7;
     color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    cursor: pointer;
 }
 
 button:hover {
-    background-color: #4169e1; /* Azul medio pastel */
-}
-
-.resultado {
-    font-size: 1.5em;
-    margin-top: 20px;
-    color: #32cd32; /* Verde pastel */
+    background-color: #4169e1;
 }

@@ -1,7 +1,35 @@
-/* Estilo para el tablero */
+/**Para el tableroo**/
 table {
     border-collapse: collapse;
     margin: 20px auto;
+}
+/**Para las casillas**/
+.blanca {
+    background-color: white;
+}
+
+.negra {
+    background-color: #8B4513;
+}
+
+/**Alfil sera de color rojo**/
+.alfil {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/**Caballo de color azul**/
+.caballo {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Etiquetas para fila y columna */
+th {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #f0f0f0;
 }
 
 td {
@@ -9,33 +37,4 @@ td {
     height: 40px;
     text-align: center;
     font-size: 20px;
-    border: 1px solid black;
-}
-
-/* Estilo para las casillas blancas y negras */
-.blanca {
-    background-color: white;
-}
-
-.negra {
-    background-color: #8B4513; /* Marrón */
-}
-
-/* Estilo para las piezas */
-.alfil {
-    color: green;
-    font-weight: bold;
-}
-
-.caballo {
-    color: blue;
-    font-weight: bold;
-}
-
-/* Etiquetas de fila y columna */
-th {
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    background-color: #f0f0f0;
 }

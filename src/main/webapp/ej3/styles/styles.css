@@ -1,30 +1,19 @@
-/* Reset para asegurar consistencia */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo general del body */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f7fc;  /* Fondo suave */
+    background-color: #f4f7fc;
     color: #333;
-    padding: 40px;
-    line-height: 1.6;
 }
 
-/* Contenedor principal */
 .container {
     max-width: 600px;
-    margin: 0 auto;
     background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Título */
 h1 {
     text-align: center;
     color: #3498db;
@@ -33,11 +22,10 @@ h1 {
     font-weight: bold;
 }
 
-/* Estilo del formulario */
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .form-group {
@@ -45,54 +33,12 @@ form {
     flex-direction: column;
 }
 
-label {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-}
-
-input[type="number"] {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    transition: border 0.3s ease;
-}
-
-input[type="number"]:focus {
-    border-color: #3498db;
-    outline: none;
-}
-
-/* Estilo del botón */
 button {
-    padding: 12px;
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s ease;
-}
-
-button:hover {
     background-color: #27ae60;
-    transform: scale(1.05);
+    color: white;
 }
 
-button:active {
-    transform: scale(0.98);
-}
-
-/* Estilo para el resultado de la media */
 .resultado {
-    margin-top: 30px;
     text-align: center;
 }
 
-.mensaje-media {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #3498db;
-    margin-top: 20px;
-}

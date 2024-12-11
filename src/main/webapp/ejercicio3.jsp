@@ -5,7 +5,7 @@
   Time: 21:47
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %><%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Media de Notas</title>
@@ -17,7 +17,7 @@
     <p>Introduce las tres notas para calcular la media.</p>
 
     <!-- Formulario para recoger las notas -->
-    <form action="mediaNotas.jsp" method="post">
+    <form action="ejercicio3.jsp" method="post">
         <div class="form-group">
             <label for="nota1">Nota 1:</label>
             <input type="number" id="nota1" name="nota1" required min="0" max="10" step="0.1" />
@@ -36,14 +36,14 @@
     <!-- Sección para mostrar la media calculada -->
     <div class="resultado">
         <%
-            // Recoger los parámetros enviados
+            // Recogemos los parámetros enviados
             String nota1Str = request.getParameter("nota1");
             String nota2Str = request.getParameter("nota2");
             String nota3Str = request.getParameter("nota3");
 
             if (nota1Str != null && nota2Str != null && nota3Str != null) {
                 try {
-                    // Convertir las notas a números decimales
+                    // Convertimos las notas a números decimales
                     double nota1 = Double.parseDouble(nota1Str);
                     double nota2 = Double.parseDouble(nota2Str);
                     double nota3 = Double.parseDouble(nota3Str);
@@ -52,7 +52,7 @@
                     double media = (nota1 + nota2 + nota3) / 3;
 
         %>
-        <!-- Mostrar el resultado de la media -->
+        <!-- Mostramos el resultado de la media -->
         <p class="mensaje-media">La media es: <%= String.format("%.2f", media) %></p>
         <%
                 } catch (NumberFormatException e) {
@@ -64,4 +64,3 @@
 </div>
 </body>
 </html>
-

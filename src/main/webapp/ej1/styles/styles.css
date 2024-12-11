@@ -1,111 +1,24 @@
-/* Reset general */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f7fc;  /* Color suave de fondo */
-    color: #333;
-    line-height: 1.6;
-    padding: 40px;
-    font-size: 16px;
-}
-
-/* Encabezado */
-h1 {
-    text-align: center;
-    color: #2c3e50;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: 600;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Caja de Información */
-.cork {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #fff;
-    background-color: #3498db;  /* Azul vibrante */
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    display: inline-block;
-    text-transform: uppercase;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo de los párrafos */
-p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    color: #555;
-    transition: color 0.3s ease;
-}
-
-/* Cambio de color cuando se pasa el ratón */
-p:hover {
-    color: #3498db;
-}
-
-/* Contenedor Principal */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #4f86f7;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
 }
 
-/* Efecto de bordes redondeados y sombra */
-input[type="text"], input[type="number"] {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 2px solid #3498db;  /* Borde azul */
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #333;
-    transition: border-color 0.3s ease;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-input[type="text"]:focus, input[type="number"]:focus {
-    border-color: #2980b9;  /* Cambio de color en focus */
-    outline: none;
-}
 
-/* Botones estilizados */
-button {
-    padding: 12px 25px;
-    background-color: #2ecc71;  /* Verde brillante */
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: #27ae60;  /* Cambio de color al pasar el ratón */
-    transform: scale(1.05);
-}
-
-button:active {
-    transform: scale(0.98);  /* Efecto al hacer clic */
-}
-
-/* Efectos visuales adicionales */
-h1, .cork, button {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-h1:hover, .cork:hover, button:hover {
-    transform: translateY(-5px);  /* Efecto de elevación al pasar el ratón */
-    opacity: 0.9;
-}

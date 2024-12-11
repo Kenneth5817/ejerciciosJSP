@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: admin
-  Date: 01/12/2024
-  Time: 22:33
+  Date: 08/12/2024
+  Time: 22:12
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -27,6 +27,7 @@
             <option value="berenjena">Berenjena</option>
         </select><br><br>
 
+        <!-- Preguntamos por el material-->
         <label for="molduras">Elige el material de las molduras:</label>
         <select name="molduras" id="molduras" required>
             <option value="madera">Madera</option>
@@ -37,14 +38,16 @@
     </form>
 
     <%
+        //Mostramos la respuesta
         if (request.getMethod().equalsIgnoreCase("POST")) {
             String tapiceria = request.getParameter("tapiceria");
             String molduras = request.getParameter("molduras");
 
-            // Mostrar el interior configurado
+            // Mostramos el interior configurado
             out.println("<h2>Vista Previa del Interior Configurado:</h2>");
             out.println("<div class='vehiculo'>");
 
+            //Enseñamos tanto tapiceria como molduras como quedaria
             out.print("<div class='tapiceria " + tapiceria + "'>Tapicería: " + tapiceria + "</div>");
             out.print("<div class='molduras " + molduras + "'>Molduras: " + molduras + "</div>");
 

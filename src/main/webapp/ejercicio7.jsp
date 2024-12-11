@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: admin
-  Date: 01/12/2024
-  Time: 22:30
+  Date: 08/12/2024
+  Time: 20:31
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generar Calendario</title>
+    <title>Creador de Calendario</title>
     <link rel="stylesheet" href="ej7/styles/styles.css">
 </head>
 <body>
@@ -33,12 +33,13 @@
             String mesStr = request.getParameter("mes");
             String anioStr = request.getParameter("anio");
 
+            //Comprobamos que sea valido el mess
             if (mesStr != null && !mesStr.isEmpty() && anioStr != null && !anioStr.isEmpty()) {
                 try {
                     int mes = new SimpleDateFormat("MMMM").parse(mesStr).getMonth();
                     int anio = Integer.parseInt(anioStr);
 
-                    // Calendar setup
+                    // Creamos calendario
                     Calendar cal = Calendar.getInstance();
                     cal.set(anio, mes, 1);
 
@@ -49,24 +50,24 @@
                     out.println("<table>");
                     out.println("<thead>");
                     out.println("<tr>");
-                    out.println("<th>Dom</th>");
                     out.println("<th>Lun</th>");
                     out.println("<th>Mar</th>");
                     out.println("<th>Mié</th>");
                     out.println("<th>Jue</th>");
                     out.println("<th>Vie</th>");
                     out.println("<th>Sáb</th>");
+                    out.println("<th>Dom</th>");
                     out.println("</tr>");
                     out.println("</thead>");
                     out.println("<tbody>");
 
-                    // Imprimir espacios hasta el primer día del mes
+                    // Imprimimos los espacios hasta el primer día del mes
                     out.print("<tr>");
                     for (int i = 1; i < primerDia; i++) {
                         out.print("<td></td>");
                     }
 
-                    // Imprimir los días del mes
+                    // Imprimimos los días del mes
                     for (int i = 1; i <= diasDelMes; i++) {
                         out.print("<td>" + i + "</td>");
                         if ((primerDia + i - 1) % 7 == 0) {
@@ -78,7 +79,7 @@
                     out.println("</tbody>");
                     out.println("</table>");
                 } catch (Exception e) {
-                    out.println("<p>Hubo un error al procesar los datos, por favor verifica el nombre del mes y el año.</p>");
+                    out.println("<p>Hubo un error al procesar los datos, por favor comprueba el nombre del mes y el año.</p>");
                 }
             }
         }
